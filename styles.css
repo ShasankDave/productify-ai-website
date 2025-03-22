@@ -1,0 +1,202 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #1F2937;
+    background: #FFFFFF;
+}
+
+/* Header */
+header {
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    padding: 8rem 2rem;
+    text-align: center;
+    background: #F8FAFC;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1E3A8A;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.375rem;
+    color: #64748B;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Buttons */
+.primary-btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #1E3A8A;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 1.125rem;
+}
+
+.primary-btn:hover {
+    background: #1E40AF;
+    transform: translateY(-2px);
+}
+
+/* Features */
+.features {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    padding: 2.5rem;
+    background: #F8FAFC;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.feature-card h3 {
+    color: #1E3A8A;
+    margin-bottom: 1rem;
+    font-size: 1.375rem;
+}
+
+.feature-card p {
+    color: #64748B;
+    line-height: 1.6;
+    font-size: 1.125rem;
+}
+
+/* Newsletter Section */
+.contact {
+    padding: 6rem 2rem;
+    background: #F8FAFC;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #1E3A8A;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+}
+
+.contact p {
+    color: #64748B;
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.125rem;
+}
+
+/* Contact Form */
+.contact-me {
+    background: white;
+    border-top: 1px solid #E2E8F0;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 1rem 1.25rem;
+    border: 2px solid #E2E8F0;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    transition: border-color 0.2s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #1E3A8A;
+}
+
+/* Newsletter specific styles */
+#newsletter .contact-form {
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    #newsletter .contact-form {
+        flex-direction: column;
+    }
+}
+
+/* Footer */
+footer {
+    padding: 2rem;
+    text-align: center;
+    color: #64748B;
+    background: white;
+    border-top: 1px solid #E2E8F0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+    
+    .contact-form {
+        flex-direction: column;
+    }
+    
+    .feature-card {
+        text-align: center;
+    }
+} 
